@@ -1,48 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sales University</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bd-coming-soon.css">
 </head>
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
 
-<body class="min-vh-100 d-flex flex-column">
+    .bgimg {
+        background-image: url('assets/images/bg.jpg');
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+    }
 
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-dark bg-transparenet">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" style="width: 300px; height:auto;" alt="logo">
-                </a>
-                <!-- <span class="navbar-text ml-auto d-none d-sm-inline-block">978-130-5444 </span>
-                <span class="navbar-text d-none d-sm-inline-block">jerald_glover@glennie.tv</span> -->
-            </nav>
+    .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+    }
+
+    .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    hr {
+        margin: auto;
+        width: 40%;
+    }
+
+    /* CSS */
+    .button-50 {
+        appearance: button;
+        background-color: #000;
+        background-image: none;
+        border: 1px solid #000;
+        border-radius: 4px;
+        box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0 5px 10px 0;
+        overflow: visible;
+        padding: 12px 40px;
+        text-align: center;
+        text-transform: none;
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    .button-50:focus {
+        text-decoration: none;
+    }
+
+    .button-50:hover {
+        text-decoration: none;
+    }
+
+    .button-50:active {
+        box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+        outline: 0;
+    }
+
+    .button-50:not([disabled]):active {
+        box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+        transform: translate(2px, 2px);
+    }
+
+    @media (min-width: 768px) {
+        .button-50 {
+            padding: 12px 50px;
+        }
+    }
+</style>
+
+<body>
+    <div class="bgimg">
+        <div class="topleft">
+            <img src="assets/images/logo.png" alt="">
         </div>
-    </header>
-    <main class="my-auto">
-        <div class="container">
-            <h1 style="color:black; position: absolute; bottom: 500px;" class="page-title">Kami akan segera hadir</h1>
-            <p style="color:black; position: absolute; bottom: 400px;" class="page-description">Sales University,
-                Sekolah Online Para TOP Achiever
-            </p>
-            <!-- <h3 style="color:#193c7f;position: absolute; bottom: 350px;">For Infomation</h3> -->
-            <nav class="footer-social-links" style="position: absolute; bottom: 300px;">
-                <a href="https://www.youtube.com/channel/UCRTaGfH5CiCYa9dmKVHxX6w" class="social-link"><i
-                        class="mdi mdi-youtube"></i></a>
-                <a href="https://www.instagram.com/sahabatsales/" class="social-link"><i
-                        class="mdi mdi-instagram"></i></a>
-                <a href="https://wa.me/6287887217027" class="social-link"><i class="mdi mdi-whatsapp"></i></a>
-                <!-- <a href="#!" class="social-link"><i class="mdi mdi-slack"></i></a>
-                <a href="#!" class="social-link"><i class="mdi mdi-skype"></i></a> -->
-            </nav>
+        <div class="middle">
+            <h2 style="color: white;">Kami akan segera hadir</h2>
+            <hr>
+            <h5 style="color: white;">Sales University, Sekolah Online Para TOP Achiever</h5>
+            <a href="http://" class="button-50">For Information</a>
         </div>
-    </main>
+        <div class="bottomleft">
+            <p style="color: black;">Sales University Powered By <a style="color: black ;"
+                    href="https://pastiprestasi.com" target="_blank" rel="noopener noreferrer">Pasti Prestasi</a></p>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>
